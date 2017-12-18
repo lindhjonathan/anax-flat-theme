@@ -1,0 +1,17 @@
+@nav-theme: lightgrey;
+
+.border(@radius: 3px) {
+	border-radius: @radius;
+	border: 1px solid darken(@nav-theme, 25%);
+}
+
+.navbar2 {
+	display: inline-block;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	font-family: Arial, sans-serif;
+	& li{
+		.border();
+		background-color: @nav-theme;
+	}
+}
